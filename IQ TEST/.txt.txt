@@ -1,0 +1,34 @@
+Question 1: 
+my answer is 2.
+Explanations: 
+My answer is 2 or a diagonal line \, because as we can see the 1st row have this lines \, ___, /.
+the 2nd row have this lines |,star like lines,|.
+and the third row have this lines /, ___, so the missing line for the 3rd row is a diagonal line \ if we will follow the pattern from 1st row to 3rd row.
+
+Question 2: 
+my answer is 2.
+Explanations: 
+- the first row have small triangle, missing middle but should be medium triangle, and large triangle.
+- the second row have small, medium and large circle.
+- the third row have small, and medium square just like the pattern from 1st row and 2nd row, so my answer is a large square which is in the option 2. 
+
+Question 3: 
+my answer is 3.
+Explanation: 
+- In the picture, the last cell in each row (1st to 3rd) is the overlap of the first two. Therefore, for Question 3, the missing first cell in the third row should be a square with one vertical line, and the second cell is also missing—it should be the same square mirrored, each with a single line (no double lines).
+
+Question 4. 
+my answer is 4.
+Explanation:
+- In the column 3, the empty circle is at the left bottom of the box, the next one is filled circle at the mid bottom, and the next position of the cirlce must be at the right bottom of the box and the circle must be empty.
+- the line starts at the middle bottom of the box, next is at the middle of the box, and the final position must be at the middle top of the box.
+- for the square, the starting of square in the box is a filled square at the right bottom of the box, next is an empty square posiition in the middle bottom of the box, the final position must be in the left bottom of the box and the square must be filled.
+ 
+Question 5.
+my answer is 3.
+- In the first column of the bottom row, the square is at the top left, while circle is on the bottom right.
+- In the 2nd column of the bottom row the square should be on the middle top, while the circle was on the middle right.
+- So if we analyze the pattern at the missing piece for the 3rd column of the bottom row where positions seem to shift or alternate
+- The square is in the top-right.
+- The circle is in the top-right.
+So, Option 3 is the right answer that has a square in the top-right and a circle in the top-right.
