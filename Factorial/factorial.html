@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Factorial (20 points)</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: #f7f7f7;
+      }
+      .container {
+        max-width: 800px;
+        margin: 30px auto;
+        background: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      h3 {
+        margin-top: 0;
+        padding-left: 10px;
+        color: #333;
+      }
+      .note {
+        color: red;
+        font-size: 14px;
+      }
+      .expected-result {
+        margin-top: 20px;
+        color: #c0392b;
+      }
+      .expected-result input {
+        width: 200px;
+        padding: 8px;
+        margin-top: 5px;
+        border: none;
+        border-bottom: 1px solid #ccc;
+        outline: none;
+        font-size: 16px;
+      }
+      .btn {
+        margin-top: 15px;
+        padding: 10px 20px;
+        background: #28a745;
+        color: #fff;
+        border: none;
+        border-radius: 0px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+      .btn:hover {
+        background: #218838;
+      }
+      .result {
+        margin-top: 15px;
+        font-size: 22px;
+        font-weight: bold;
+      }
+      .label {
+        color: #d6d6d6;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="expected-result">
+        <h3 style="color: #d96161">Expected Result</h3>
+        <div style="display: flex">
+          <div>
+            <label class="label">Number</label><br />
+            <input type="number" id="numInput" placeholder="Enter Number" />
+          </div>
+
+          <div class="result">:: Result :: <span id="output">0</span></div>
+        </div>
+
+        <button class="btn" onclick="calculate()">Calculate</button>
+      </div>
+    </div>
+
+    <script>
+      function calculate(n) {
+        console.log(n);
+
+        if (n === undefined) {
+          n = parseInt(document.getElementById("numInput").value);
+          if (isNaN(n) || n < 0) {
+            document.getElementById("output").innerText = "Invalid Input";
+            return;
+          }
+
+          const result = calculate(n);
+          document.getElementById("output").innerText = result;
+          return;
+        }
+
+        // check if the n is 0 or 1 and return 1
+        if (n === 0 || n === 1) {
+          return 1;
+        }
+
+        // this part will multiply n with factorial of (n-1)
+        // example 5! = 5 * (5 -1) until the n becomes 1.
+        return n * calculate(n - 1);
+      }
+    </script>
+  </body>
+</html>
