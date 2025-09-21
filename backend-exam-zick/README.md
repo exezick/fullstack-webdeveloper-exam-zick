@@ -15,8 +15,6 @@
 ## 1. Install dependencies
 
 ```bash
-git clone <your-repo-url> ci4-app
-cd ci4-app
 composer install
 ```
 
@@ -61,6 +59,8 @@ CREATE DATABASE backend_ci4_db
   COLLATE utf8mb4_general_ci;
 ```
 
+or You can import the database found in backend-exam-zick\database\backend_ci4_db.sql
+
 ---
 
 ## 4. Run migrations & seed users
@@ -71,6 +71,8 @@ php spark db:seed UserSeeder
 ```
 
 This will create tables and seed 3 accounts:
+
+## Username and passwords
 
 - **Manager** → `manager / secret`
 - **Web Developer** → `webdev / secret`
@@ -97,25 +99,5 @@ Now visit: [http://localhost:8080/login](http://localhost:8080/login)
   - **WebDev / WebDes** → Limited to their own role’s records.
 
 ---
-
-## 7. (Optional) Test the REST API
-
-Generate a token for a user:
-
-```sql
-UPDATE users
-SET api_token = LOWER(CONCAT(REPLACE(UUID(),'-',''), REPLACE(UUID(),'-','')))
-WHERE username = 'manager';
-```
-
-Then call:
-
-```bash
-curl -H "Authorization: Bearer <TOKEN>" http://localhost:8080/api/employees
-```
-
----
-
-✅ Follow steps **1 → 7** and your app will be running locally.
 
 --- Developed by: Exequiel Vibar ---
